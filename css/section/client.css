@@ -1,0 +1,140 @@
+#client{
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: var(--background-color-3);
+  padding-bottom: 20px;
+}
+
+.client_main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60% ;
+  margin: 0 auto;
+  
+}
+
+.client_content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px 0;
+
+}
+
+.client_content .client_info{
+  font-family:'Poppins', Times New Roman, Times;
+  letter-spacing: -1px;
+}
+
+.client_info h2{
+  color: var(--font-color-4);
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.client_info .underline {
+width: 60px;
+height: 6px;
+background-color: var(--background-color-1);
+margin: 0 auto;
+border-radius: 5px;
+}
+
+.client_info p{
+  color:var(--font-color-3);
+  font-weight: 600;
+  font-size: 15;
+  width: 80%;
+  margin: 40px auto;
+}
+
+.client_cards{
+  width: 66%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin:0 auto;
+  margin-bottom: 50px;
+  margin-top: -60px;
+  gap:80px;
+}
+
+
+.client_card .client_header{
+  
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+  margin-bottom:40px;
+}
+
+.client_card img{
+  border-radius: 100%;
+  width: 70px;
+}
+
+.client_card .name{
+   font-family:'Poppins', Times New Roman, Times;
+   font-weight: 500;
+   font-size: 16px;
+   margin-top: 10px;
+}
+
+.client_card p{
+   font-family:'Poppins', Times New Roman, Times;
+   font-size: 10px;
+   margin-top: -5px;
+
+}
+
+.comment_card{
+  height: auto;
+  /* padding:5px;*/
+  margin-top: -20px;
+ 
+}
+
+.comment_card .card_index{
+ background-color: var(--background-color-2);
+}
+
+.comment_card p{
+  font-family:'Poppins', Times New Roman, Times;
+  color: var(--font-color-1);
+  font-weight: 400;
+  padding: 15px 10px;
+  margin: 10px;
+  font-size: 12px;
+}
+
+.triangle{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  height: auto;
+}
+
+.comment_card .left_triangle{
+  width: 6%;
+  margin-top: -10px;
+  background-color: var(--background-color-6);
+  z-index:77;
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
+}
+
+.comment_card .right_triangle{
+  width: 6%;
+  margin-top: -10px;
+  background-color: var(--background-color-6);
+  z-index:77;
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+
+

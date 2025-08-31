@@ -1,0 +1,20 @@
+
+@import './common.css';
+
+@import './layouts/header.css';
+
+@import './section/hero.css';
+
+@import './section/classes.css';
+
+@import './section/bmi.css';
+
+@import './section/trainers.css';
+
+@import './section/purchase.css';
+
+@import './section/client.css';
+
+@import './section/contact-us.css';
+
+@import './layouts/footer.css';

@@ -1,0 +1,197 @@
+#trainers{
+  position: relative;
+  width: 100%;
+  background-color: var(--background-color-3);
+}
+
+.trainers_main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+ 
+}
+
+.trainers_content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 0;
+  font-family:'Poppins', Times New Roman, Times;
+  
+}
+
+.trainers_info{
+  margin: 20px;
+  padding: 20px;
+}
+.trainers_info h2{
+  color: var(--font-color-4);
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.trainers_info .underline{
+  width: 60px;
+  height: 6px;
+  background-color: var(--background-color-1);
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.trainers_info p {
+  color:var(--font-color-3);
+  font-weight: 600;
+  font-size: 15;
+  width: 55%;
+  margin: 40px auto;
+}
+
+
+.trainers_container{
+  width: 90%;
+  height: 100%;
+  position: relative;
+  margin:auto;
+  
+}
+
+.main_container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap:90px;
+  
+}
+
+/*CARD*/
+
+.trainer_container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+.sides{ 
+  &::before,
+  &::after{
+    content: "";
+    position: absolute;
+    width: 96%;
+    height: 30%;
+    left: 0;
+    top: 35%;
+  }
+
+  &::after {
+    border-left: 7px solid var(--font-color-4);
+    border-right: 7px solid var(--font-color-4);
+}
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: none;
+
+  &:hover {
+    .wrp_card {
+      &::after,
+      &::before {
+          transform: scale3d(1,1,1);
+          transition: transform 0.3s linear;
+          
+      }
+    }
+      .trainers_name{
+        opacity: 1;
+      }
+    }
+  }
+
+  /* Çizgi Animasyonları Start */
+.wrp_card {
+  height: 100%;
+  padding: 7px;
+  position: relative;
+  transition: border 0.3s linear;
+  background-color: var(--background-color-3);
+  
+ 
+  &::before,
+  &::after{
+    content: "";
+    position: absolute;
+    width: 97%;
+    height: 92%;
+    left: 0;
+    top: 0;
+  }
+
+  &::before {
+    border-top: 7px solid var(--font-color-4);
+    border-bottom: 7px solid var(--font-color-4);
+    transform: scale3d(1,1,1);
+    width: 25%;
+    left:40%;
+    
+  }
+
+  &::after {
+    border-left: 7px solid var(--font-color-4);
+    border-right: 7px solid var(--font-color-4);
+    transform: scale3d(1, 0 ,1);
+    width: 96%;
+    height: 90%;
+    top: 10px;
+  }
+}
+/* Çizgi Animasyonları End */
+
+
+.card img{
+  display: flex;
+  width: 98%;
+  height: 98%;
+  position: relative;
+  margin:2px;
+  border-radius: 5px;
+  border: 1px solid orange;
+}
+
+.trainers_name{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: 25%;
+    top: 55%;
+    left: 5%;
+    padding-top:40px;
+    clip-path: polygon(0 42%, 15% 42%, 15% 28%, 85% 27%, 85% 42%, 100% 42%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+    z-index:99;
+    opacity: 0;
+    color:var(--font-color-1);
+    font-size: 12px;
+    background-color: var(--background-color-2);
+    font-family:'Poppins', Times New Roman, Times;
+   }
+
+.trainers_name h1{
+    font-size:30px;
+   }
+
+

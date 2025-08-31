@@ -1,0 +1,110 @@
+#purchase{
+  position: relative;
+  width: 100%;
+}
+
+.purchase_main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60% ;
+  margin: 0 auto;
+  
+}
+
+.purchase_content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px 0;
+  
+
+}
+
+.purchase_content .purchase_info{
+  font-family:'Poppins', Times New Roman, Times;
+  letter-spacing: -1px;
+}
+
+.purchase_info h2{
+  color: var(--font-color-4);
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.purchase_info .underline {
+width: 60px;
+height: 6px;
+background-color: var(--background-color-1);
+margin: 0 auto;
+border-radius: 5px;
+}
+
+.purchase_info p{
+  color:var(--font-color-3);
+  font-weight: 600;
+  font-size: 15;
+  width: 80%;
+  margin: 40px auto;
+}
+
+.purchase_cards{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.purchase_card {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.purchase_card img{
+  width: 100%;
+  border-radius: 5px;
+}
+
+.purchase_card .card_name{
+  font-family:'Poppins', Times New Roman, Times;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.purchase_card .price{
+  font-family:'Poppins', Times New Roman, Times;
+  font-size: 10px;
+  font-weight: 600;
+  margin-top : 10px;
+}
+
+.purchase_card .shopping{
+  width: 100%;
+  display: flex;
+  justify-content:start;
+  align-items: center;
+  gap:5px;
+  margin-left: 10px;
+  padding: 10px;
+ 
+}
+
+.purchase_card .addTocard{
+   font-family:'Poppins', Times New Roman, Times;
+   font-size:12px;
+   font-weight: 600;
+   border: none;
+   background: none;
+   margin:0 35px;
+}

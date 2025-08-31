@@ -1,0 +1,46 @@
+#footer {
+  position: relative;
+  width: 100%;
+  background-color: var(--background-color-2);
+}
+
+.footer_info {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  padding-bottom: 10px;
+  margin-top:50px;
+
+}
+
+.footer_index p{
+  font-family:'Poppins', Times New Roman, Times;
+  color: var(--font-color-1);
+  font-size:16px;
+  
+
+}
+
+.footer_info .link_info{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family:'Poppins', Times New Roman, Times;
+  margin: 5px;
+
+}
+
+.footer_info .link_info h1{
+  color: var(--font-color-1);
+
+}
+.footer_info .link_info li{
+  list-style: none;
+}
+
+.footer_info .link_info a{
+  text-decoration: none;
+  color: var(--font-color-1);
+}
