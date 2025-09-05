@@ -1,11 +1,12 @@
 #footer {
-  position: relative;
   width: 100%;
+  height: auto;
   background-color: var(--background-color-2);
 }
 
 .footer_info {
   width: 70%;
+  height: auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -43,4 +44,30 @@
 .footer_info .link_info a{
   text-decoration: none;
   color: var(--font-color-1);
+}
+
+@media (max-width:576px){
+
+#footer {
+  height: 80%;
+  margin-top:50rem;
+  padding: 0;
+}
+
+.footer_info{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+}
+
+.link_info{
+ gap: 3rem;
+ padding-top: 2rem;
+ line-height: 2.5rem;
+}
+
+
 }

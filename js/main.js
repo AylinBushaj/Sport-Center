@@ -80,13 +80,16 @@ function toggleMenu() {
   document.getElementById("mobileMenu").classList.toggle("hidden");
 }
 
-  
-
-  
-
-
-
-
 /* Our Classes Buttons End */
 
+/* Nav */
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".hamburger_navs");
+
+hamburger.addEventListener('click', () => {
+hamburger.classList.toggle("active");
+
+navMenu.classList.toggle("active");
+});
 

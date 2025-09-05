@@ -1,14 +1,11 @@
 #purchase{
-  position: relative;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .purchase_main{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 60% ;
-  margin: 0 auto;
+
+   grid-column: 2 / span 4;
   
 }
 
@@ -107,4 +104,32 @@ border-radius: 5px;
    border: none;
    background: none;
    margin:0 35px;
+}
+
+@media (max-width:576px){
+
+.purchase_info h2{
+  font-size:26px;
+}
+
+.purchase_cards{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.purchase_card {
+  width: 100%;
+}
+
+.purchase_card .addTocard{
+  padding-left:1rem;
+}
+  
+
+
+
 }

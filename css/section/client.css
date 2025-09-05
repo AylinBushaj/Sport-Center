@@ -138,3 +138,33 @@ border-radius: 5px;
 }
 
 
+@media (max-width:576px){
+
+  #client{
+    padding-bottom: 10px;
+  }
+
+  .client_main{
+    width: 100%;
+  }
+
+ .client_cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 1rem;
+  gap:3rem;
+ }
+
+ .client_card .name{
+  font-size: 20px;
+  padding-bottom: 0.5rem;
+ }
+
+ .client_card p{
+  font-size: 14px;
+  padding-bottom: 2rem;
+ }
+}

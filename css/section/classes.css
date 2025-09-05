@@ -1,15 +1,11 @@
 #classes_section{
-  position: relative;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding-bottom:5rem;
 }
 
 .classes_main{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 60% ;
-  margin: 0 auto;
-  
+  grid-column: 2 / span 4; 
 }
 
 .classes_content{
@@ -84,26 +80,20 @@ clip-path: polygon(0 0, 100% 0, 100% 80%, 60% 80%, 50% 100%, 40% 80%, 0 80%);
 
 
 .about_classes{
-  display: flex;
-  justify-content:center;
-  align-items:center;
-  margin: 0 auto;
-  padding:30px;
-  width: 100%;
-  gap: 50px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
   color:var(--font-color-3);
  
 }
 
 .hidden{
-    
     display: none;
 }
 
 
 .classes_time h1{
 font-weight: 700;
-font-size: 30px;
+font-size: 28px;
 font-family:'Poppins', Times New Roman, Times;
 margin-bottom: 10px;
 }
@@ -117,6 +107,9 @@ width: 75%;
 
 .about_classes .classes_img{
   width: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
  
 }
 
@@ -129,13 +122,98 @@ width: 75%;
 #classes_section::after {
 content: "";
 position: absolute;
-top:0;
-left:0;
 width:100%;
-height: 100%;
+height:80%;
 background-color: var(--background-color-4);
-z-index:-3 ;
+z-index:-3;
 clip-path: polygon(40% 0%, 100% 0, 100% 100%, 50% 100%);
 
 }
 
+@media (max-width:576px){
+
+  .classes_section{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .classes_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .classes_content{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+    width: 100%;
+    
+  }
+
+ .classes_content .classes_btn_group{
+  grid-column: 1 / -1 ;
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap:1rem;
+  margin:0;
+  padding:0;
+}
+
+.classes_content .classes_btn{
+  display: inline-block;
+  margin:0;
+  padding:0.5rem 1.3rem;
+}
+
+
+
+.about_classes{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.classes_time p{
+  text-align:justify;
+  width: 100%;
+  margin-bottom:1rem;
+}
+
+.classes_time h1{
+  font-size:24px;
+}
+
+.about_classes .classes_img{
+  display: block;
+}
+
+.hidden{
+    display: none;
+}
+
+#classes_section::after {
+content: "";
+position: absolute;
+width:100%;
+height:150%;
+background-color: var(--background-color-4);
+z-index:-3;
+clip-path: polygon(40% 0%, 100% 0, 100% 100%, 50% 100%);
+
+}
+
+}
