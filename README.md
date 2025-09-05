@@ -1,3 +1,6 @@
+
+Sayfaya ulaşmak için => https://velvety-cassata-6825f8.netlify.app/
+
 ## Sport Center
 
 -   "Our Classes" altında bulunan butonlar aktif olarak ayarlandı. Her bir spor dalı için içerik düzenlendi.
